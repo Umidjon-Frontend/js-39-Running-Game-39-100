@@ -1,0 +1,68 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+img{
+  width: 100%;
+}
+.container{
+  width: 900px;
+  height: 300px;
+  background-color: #fff;
+  border-bottom: 5px solid #264653;
+  position: relative;
+  z-index: 2;
+  background-color: #faedcd;
+}
+.hero{
+  position: absolute;
+  bottom: -22px;
+  left: 30px;
+  width: 100px;
+  z-index: 1;
+}
+.drakon{
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  /* animation: drakon 1s infinite linear; */
+}
+.hero.animation{
+  animation: hero 0.3s linear;
+}
+@keyframes hero {
+  0%{
+    top: 180px;
+  }
+  30%{
+    top: 130px;
+  }
+  50%{
+    top: 90px;
+  }
+  75%{
+    top: 130px;
+  }
+  100%{
+    top: 180px;
+  }
+
+}
+
+@keyframes drakon {
+  0%{
+    left: 800px;
+  }
+  100%{
+    left: -20px;
+  }
+}
